@@ -1,7 +1,7 @@
 # ELCLUBDELAMERIENDA
 
 # Introducción
->>*En este Proyecto participaremos en el desarrollo de una web/app que pertenece al rubro de servicios de entrenamiento personalizado correspondiente al primer semestre del segundo año de la Tecnicatura en Desarrollo web y de aplicaciones digitales del ISPC. Simulando, la gestion administrativa, registro, informacion reelevante y pagos de los servicios del mismo.
+>>*En este Proyecto participaremos en el desarrollo de una web/app que pertenece al rubro de servicios de entrenamiento personalizado, correspondiente al primer semestre del segundo año de la Tecnicatura en Desarrollo web y de aplicaciones digitales del ISPC. Simulando, la gestion administrativa, registro, informacion reelevante y pagos de los servicios del mismo.
 
 ## Objetivo Generales :dart:
 
