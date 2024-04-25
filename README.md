@@ -26,7 +26,7 @@
 - [Matias Gonzalez](https://github.com/MatiasGonzalez1)
 - [Bazan Axel Esteban](https://github.com/AxelBazan98)
 - [Novillo Pablo Jeremías](https://github.com/PNovillo)
-- [Avíla Rocío](https://github.com/rocioAvila)
+- [Ávila Rocío](https://github.com/rocioAvila)
 - [Sanchez Ezequiel](https://github.com/ezesanchez25)
 - [Campos Marcos](https://github.com/marcoscampos81)
 - [Colombo José](https://github.com/josecolombotk)
