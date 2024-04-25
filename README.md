@@ -29,7 +29,7 @@
 - [Ávila Rocío](https://github.com/rocioAvila)
 - [Sanchez Ezequiel](https://github.com/ezesanchez25)
 - [Campos Marcos](https://github.com/marcoscampos81)
-- [Colombo José](https://github.com/josecolombotk)
+- [Colombo Jose](https://github.com/josecolombotk)
 - [Moisés Mayra](https://github.com/Mayri1)
 - [Julieta Boiola](https://github.com/juliboiola)
 
