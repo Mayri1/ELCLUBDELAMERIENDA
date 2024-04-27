@@ -1,7 +1,7 @@
 # ELCLUBDELAMERIENDA
 
 # Introducción
->>*En este Proyecto participaremos en el desarrollo de una web/app que pertenece al rubro de servicios de entrenamiento personalizado, correspondiente al primer semestre del segundo año de la Tecnicatura en Desarrollo web y de aplicaciones digitales del ISPC. Simulando, la gestion administrativa, registro, informacion reelevante y pagos de los servicios del mismo.
+>>*En este Proyecto participaremos en el desarrollo de una web/app que pertenece al rubro de servicios de entrenamiento personalizado, correspondiente al primer semestre del segundo año de la Tecnicatura en Desarrollo web y de aplicaciones digitales del ISPC. Simulando, la gestión administrativa, registro, información relevante y pagos de los servicios del mismo.
 
 ## Objetivo Generales :dart:
 
@@ -11,7 +11,7 @@
 -	Facilitar la primera interacción y crear una comunidad activa para fomentar la comunicación a través de la aplicación, permitiendo motivar a los clientes y que se sientan parte de una comunidad comprometida.
 
 
-## Objetivos Especificos :dart:
+## Objetivos Específicos :dart:
 
 -	Facilitar la gestión personal de clientes en una interfaz amigable, dinámica y atractiva. 
 -	Ofrecer a los clientes recursos educativos online con disponibilidad 24/7
@@ -23,7 +23,7 @@
 
 ## Integrantes  🦈 :trollface:
 
-- [Matias Gonzalez](https://github.com/MatiasGonzalez1)
+- [Matías Gonzalez](https://github.com/MatiasGonzalez1)
 - [Bazan Axel Esteban](https://github.com/AxelBazan98)
 - [Novillo Pablo Jeremías](https://github.com/PNovillo)
 - [Ávila Rocío](https://github.com/rocioAvila)
