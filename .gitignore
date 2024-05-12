@@ -1,0 +1,21 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+/media
+
+# Node.js
+node_modules/
+.env
+
+myenv/
+myenv
+
+# Angular build
+dist/
+out-tsc/
+tmp/
+
