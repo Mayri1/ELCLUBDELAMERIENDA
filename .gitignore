@@ -1,3 +1,4 @@
+
 # Django
 *.log
 *.pot
@@ -11,11 +12,57 @@ db.sqlite3
 node_modules/
 .env
 
-myenv/
-myenv
-
 # Angular build
 dist/
 out-tsc/
 tmp/
+myenv
+
+# Ignorar carpetas de compilación
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Ignorar virtual environment
+/myenv
+
+# Ignorar módulos de Node.js
+/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log
+yarn-error.log
+
+# Configuraciones de IDE
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Misceláneos
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
 
