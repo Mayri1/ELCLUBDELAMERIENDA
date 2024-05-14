@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService, Item } from './api.service';
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 @Component({
   selector: 'app-root',
   standalone: true,
