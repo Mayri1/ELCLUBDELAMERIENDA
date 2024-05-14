@@ -1,0 +1,55 @@
+DESCARGAR PYTHON
+DESCARGAR NODE.JS VERSION 18
+HACER UNA CARPETA
+COMANDOS:
+ANGULAR:
+npm install -g @angular/cli
+ng angularApp (se crea la app)
+cd angularApp
+DJANGO:
+pip install django 
+pip install django djangorestframework
+django-admin startproject ELCLUBDELAMERIENDA
+cd ELCLUBDELAMERIENDA
+python manage.py startapp GYM
+
+CONFIGURAR DENTRO DEL PROYECTO DJANGO: 
+AGREGUE A INSTALLED APPS EN SETTINGS:
+'rest_framework',
+'GYM',
+'corsheaders',
+AGREGUE A SETTINGS ABAJO:
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ],
+}
+Y EN MIDDLEWARE :
+MIDDLEWARE = [
+    ...,
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+]
+
+CONFIGURE MODELS Y SERIALIZER de ejemplo para levantar la app y hacer la conexion
+CONFIGURE LAS VIEWS Y URLS
+CREE UN URLS.PY EN LA APP GYM Y LA INCLUI EN LAS URLS.PY DEL PROYECTO 
+MIGRE Y LEVANTE EL SERVIDOR:
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+
+******Conexión Angular con Django REST*******
+GENERE UN SERVICIO
+ng generate service api
+
+CONFIGURE main.server.ts api.service.ts y app.component.ts, app.config.ts Y AGREGUE A app.component.html UN BUCLE PARA PROBAR LA API
+
+PUEDEN VER LOS ARCHIVOS
+
+
