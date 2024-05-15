@@ -21,6 +21,7 @@
   max-width: var(--max-width);
   margin: auto;
   padding: 5rem 1rem;
+  color: var(--white)
 }
 
 .section__header {
@@ -222,9 +223,9 @@ nav {
 .explore__grid {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-}
+  }
 
 .explore__card {
   padding: 1rem;
@@ -272,7 +273,7 @@ nav {
 
 .class__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
 }
 
