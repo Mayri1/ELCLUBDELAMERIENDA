@@ -109,7 +109,15 @@
         <button class="btn">Reservar una Clase</button>
       </div>
     </section>
-
+    <section>
+      <h1 class="gtitle">NUESTRA GALERIA DE FOTOS</h1>
+    <div class="gallery-container">
+      <div class="gallery">
+      <div *ngFor="let photo of photos; let i = index">
+        <img [src]="photo" [alt]="'Photo ' + (i + 1)" (click)="openPhoto(i)"></div>
+      </div>
+    </div>
+  </section>
     <section class="section__container join__container">
       <h2 class="section__header">POR QUE ENTRENAR AQUÍ ?</h2>
       <p class="section__subheader">
@@ -146,7 +154,6 @@
         </div>
       </div>
     </section>
-
     <section class="section__container precio__container">
       <h2 class="section__header">NUESTROS PRECIOS</h2>
       <p class="section__subheader">
@@ -218,8 +225,6 @@
         </div>
       </div>
     </section>
-
-   
     <footer class="section__container footer__container">
       <span class="bg__blur"></span>
       <span class="bg__blur footer__blur"></span>
