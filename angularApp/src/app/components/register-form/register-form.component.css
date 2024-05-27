@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #111317;
+  --primary-color-transparent: #1b1e24a6;
   --primary-color-light: #1f2125;
   --primary-color-extra-light: #35373b;
   --secondary-color: #f9ac54;
@@ -290,19 +291,50 @@ nav {
   margin-bottom: 4rem;
   color: var(--text-light);
 }
+ /************** FORMULARIO DE REGISTRO *****************/
 
-.form{
-  height: 400px;
-  color: var(--white);
-  border: 1px solid var(--secondary-color);
+.register__form{
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--primary-color-transparent);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: all 1s ease-in;
 }
 
-.form label{
-padding-bottom: 30px;
-justify-content: center;
+.register__form:hover{
+  transform: scale(1.1);
+  box-shadow: 6px 6px 6px 0.2px rgba(41, 40, 40, 0.64);
+}
+
+.register__form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d1d5db;
+}
+
+.register__form label {
+  color: #d1d5db;
+}
+
+.form{
+  margin-top: 10px;
+}
+
+.register__form input[type="text"],
+.register__form input[type="email"],
+.register__form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 .review {
+
   background-color: var(--primary-color-light);
 }
 
