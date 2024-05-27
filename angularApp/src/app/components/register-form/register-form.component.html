@@ -28,10 +28,11 @@
       <div class="header__content">
         <span class="bg__blur"></span>
         <span class="bg__blur header__blur"></span>
-        
-      </div>
-      <div class="header__form">
-        <form class="form "[formGroup]="userForm">
+      </div >
+
+      <div class="register__form">
+        <h2>Formulario de Registro</h2>
+        <form class="form "[formGroup]="formGroup">
           <div>
             <label>Primer Nombre:</label>
             <input type="text" class="" formControlName="firstName">
@@ -56,8 +57,9 @@
             <label>Contraseña:</label>
             <input type="text" class="" formControlName="password">
           </div>
-
-          <button class="btn" type="submit" disabled><a href="/" routerLinkActive="router-link-active" >Enviar</a></button>
+          
+          <button class="btn" type="submit" (click)="clickRegister()">Enviar</button>
+          <!-- <button class="btn" type="submit" disabled><a href="/" routerLinkActive="router-link-active" >Enviar</a></button> -->
 
         </form>
       </div>
