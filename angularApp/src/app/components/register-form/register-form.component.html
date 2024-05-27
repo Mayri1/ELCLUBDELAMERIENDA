@@ -32,35 +32,33 @@
 
       <div class="register__form">
         <h2>Formulario de Registro</h2>
-        <form class="form "[formGroup]="formGroup">
+        <form class="form" [formGroup]="formGroup">
           <div>
             <label>Primer Nombre:</label>
             <input type="text" class="" formControlName="firstName">
           </div>
-
+      
           <div>
             <label>Apellido:</label>
             <input type="text" class="" formControlName="lastName">
           </div>
-
+      
           <div>
             <label>Nombre de usuario:</label>
             <input type="text" class="" formControlName="userName">
           </div>
-
+      
           <div>
             <label>Email:</label>
-            <input type="text" class="" formControlName="email">
+            <input type="email" class="" formControlName="email">
           </div>
-
+      
           <div>
             <label>Contraseña:</label>
-            <input type="text" class="" formControlName="password">
+            <input type="password" class="" formControlName="password">
           </div>
-          
-          <button class="btn" type="submit" (click)="clickRegister()">Enviar</button>
-          <!-- <button class="btn" type="submit" disabled><a href="/" routerLinkActive="router-link-active" >Enviar</a></button> -->
-
+      
+          <button id="submit-form" class="btn" type="button" (click)="clickRegister()" [disabled]="!formGroup.valid">Enviar</button>
         </form>
       </div>
     </header>
