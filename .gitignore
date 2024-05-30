@@ -18,6 +18,7 @@ out-tsc/
 tmp/
 myenv
 
+
 # Ignorar carpetas de compilación
 /dist
 /tmp
