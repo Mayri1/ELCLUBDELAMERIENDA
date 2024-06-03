@@ -27,6 +27,7 @@ myenv
 
 # Ignorar virtual environment
 /myenv
+miEntorno/
 
 # Ignorar módulos de Node.js
 /node_modules
