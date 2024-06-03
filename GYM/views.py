@@ -1,13 +1,27 @@
 from rest_framework import viewsets
-from .models import Item
-from .serializers import ItemSerializer
+from .models import Item, Clase, Reserva, Pago, Recurso
+from .serializers import ItemSerializer, ClaseSerializer, ReservaSerializer, PagoSerializer, RecursoSerializer, UserSerializer
 from django.contrib.auth import authenticate
 from rest_framework import generics, status
 from rest_framework.response import Response
 from .serializers import UserSerializer
 from django.contrib.auth.models import User
 
+class ClaseViewSet(viewsets.ModelViewSet):
+    queryset = Clase.objects.all()
+    serializer_class = ClaseSerializer
 
+class ReservaViewSet(viewsets.ModelViewSet):
+    queryset = Reserva.objects.all()
+    serializer_class = ReservaSerializer
+
+class PagoViewSet(viewsets.ModelViewSet):
+    queryset = Pago.objects.all()
+    serializer_class = PagoSerializer
+
+class RecursoViewSet(viewsets.ModelViewSet):
+    queryset = Recurso.objects.all()
+    serializer_class = RecursoSerializer
 
 class ItemViewSet(viewsets.ModelViewSet):
     queryset = Item.objects.all()
