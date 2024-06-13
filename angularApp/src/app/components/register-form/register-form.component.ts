@@ -1,7 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { log } from 'console';
 
 @Component({
   selector: 'app-register-form',
@@ -52,10 +51,6 @@ export class RegisterFormComponent {
   };
 
     console.log(data.data);
-    
-
-      }
-    
-    
+      } 
   }
 }
