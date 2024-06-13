@@ -333,6 +333,16 @@ nav {
     border-radius: 3px;
 }
 
+input.ng-valid {
+  border-color: green!important; /* Cambia el color del borde a verde cuando el campo es válido */
+}
+
+/* Estilo para inputs inválidos */
+ input.ng-invalid {
+  border-color: red; /* Cambia el color del borde a rojo cuando el campo es inválido */
+} 
+
+
 .review {
 
   background-color: var(--primary-color-light);

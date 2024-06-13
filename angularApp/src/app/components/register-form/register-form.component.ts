@@ -22,7 +22,7 @@ export class RegisterFormComponent {
 
   })
 
-
+  
   // formGroup = new FormGroup({
   //   firstName: new FormControl("", [Validators.required]),
   //   lastName: new FormControl("", [Validators.required, Validators.minLength(4)]),
@@ -31,6 +31,23 @@ export class RegisterFormComponent {
   //   password: new FormControl("", [Validators.required]),
   //   isAgree: new FormControl(false)
   // })
+
+
+ 
+
+  // updateBorderStyle(controlName: string, value: any): void {
+  //   const control:any = this.formGroup.get(controlName);
+  //   if (control.invalid && control.touched) {
+  //     control.setErrors({ customError: true }); // Agregar un error personalizado
+  //   } else {
+  //     control.setErrors(null); // Eliminar el error personalizado
+  //   }
+  // }
+  // emailValidator(control: AbstractControl){
+  //   const emailRegex: RegExp = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  //   const valid = emailRegex.test(control.value);
+  //   valid? null : {'invalidEmail': {value: control.value}};
+  //  }
 
   clickRegister(): void {
     if(this.formGroup.valid){
