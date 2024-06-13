@@ -31,23 +31,9 @@
       </div >
 
       <div class="register__form">
-        <h2>Formulario de Registro</h2>
+        <h2>¡Hola de nuevo!</h2>
         <form class="form" [formGroup]="formGroup">
-          <div>
-            <label>Primer Nombre:</label>
-            <input type="text" class="" formControlName="firstName">
-          </div>
-      
-          <div>
-            <label>Apellido:</label>
-            <input type="text" class="" formControlName="lastName">
-          </div>
-      
-          <div>
-            <label>Nombre de usuario:</label>
-            <input type="text" class="" formControlName="userName">
-          </div>
-      
+                     
           <div>
             <label>Email:</label>
             <input type="email" class="" formControlName="email">
@@ -58,7 +44,7 @@
             <input type="password" class="" formControlName="password">
           </div>
       
-          <button id="submit-form" class="btn" type="button" (click)="clickRegister()" [disabled]="!formGroup.valid">Enviar</button>
+          <button id="submit-form" class="btn" type="button" (click)="clickLogin()" [disabled]="!formGroup.valid">Enviar</button>
         </form>
       </div>
     </header>
