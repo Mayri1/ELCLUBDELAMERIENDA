@@ -17,7 +17,7 @@ export class RegisterFormComponent {
     firstName:["", Validators.required],
     lastName: ["", Validators.required],
     userName: ["", Validators.required],
-    email: ["", Validators.required, Validators.email],
+    email: ["", Validators.required],
     password: ["", Validators.required],
 
   })
@@ -33,8 +33,24 @@ export class RegisterFormComponent {
   // })
 
   clickRegister(): void {
+    if(this.formGroup.valid){
+
     const firstName = this.formGroup.controls.firstName.value;
-    console.log(firstName);
-    
+    const lastName = this.formGroup.controls.lastName.value;
+    const userName = this.formGroup.controls.userName.value;
+    const email = this.formGroup.controls.email.value;
+    const password = this.formGroup.controls.password.value;
+   
+    const data = {data: {
+      "firstName": firstName,
+      "lastName": lastName,
+      "userName": userName,
+      "email": email,
+      "password": password
+    }
+  };
+
+    console.log(data.data);
+      } 
   }
 }
