@@ -590,16 +590,24 @@ function __asyncGenerator(thisArg, _arguments, generator) {
   if (!Symbol.asyncIterator)
     throw new TypeError("Symbol.asyncIterator is not defined.");
   var g = generator.apply(thisArg, _arguments || []), i, q = [];
-  return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
+  return i = {}, verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function() {
     return this;
   }, i;
-  function verb(n) {
-    if (g[n])
+  function awaitReturn(f) {
+    return function(v) {
+      return Promise.resolve(v).then(f, reject);
+    };
+  }
+  function verb(n, f) {
+    if (g[n]) {
       i[n] = function(v) {
         return new Promise(function(a, b) {
           q.push([n, v, a, b]) > 1 || resume(n, v);
         });
       };
+      if (f)
+        i[n] = f(i[n]);
+    }
   }
   function resume(n, v) {
     try {
@@ -12783,7 +12791,7 @@ function createRootComponent(componentView, rootComponentDef, rootDirectives, ho
 }
 function setRootNodeAttributes(hostRenderer, componentDef, hostRNode, rootSelectorOrNode) {
   if (rootSelectorOrNode) {
-    setUpAttributes(hostRenderer, hostRNode, ["ng-version", "17.3.8"]);
+    setUpAttributes(hostRenderer, hostRNode, ["ng-version", "17.3.11"]);
   } else {
     const { attrs, classes } = extractAttrsAndClassesFromSelector(componentDef.selectors[0]);
     if (attrs) {
@@ -20123,7 +20131,7 @@ var Version = class {
     this.patch = parts.slice(2).join(".");
   }
 };
-var VERSION = new Version("17.3.8");
+var VERSION = new Version("17.3.11");
 var _Console = class _Console {
   log(message) {
     console.log(message);
@@ -24586,14 +24594,14 @@ export {
 
 @angular/core/fesm2022/primitives/signals.mjs:
   (**
-   * @license Angular v17.3.8
+   * @license Angular v17.3.11
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)
 
 @angular/core/fesm2022/core.mjs:
   (**
-   * @license Angular v17.3.8
+   * @license Angular v17.3.11
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)
@@ -24625,4 +24633,8 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
+<<<<<<<< HEAD:angularApp/.angular/cache/17.3.8/vite/deps/chunk-ORL24GRQ.js
 //# sourceMappingURL=chunk-ORL24GRQ.js.map
+========
+//# sourceMappingURL=chunk-2QDPCBAK.js.map
+>>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/chunk-2QDPCBAK.js

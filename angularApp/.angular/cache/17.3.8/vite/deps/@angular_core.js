@@ -451,7 +451,11 @@ import {
   ɵɵvalidateIframeAttribute,
   ɵɵviewQuery,
   ɵɵviewQuerySignal
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/@angular_core.js
 } from "./chunk-ORL24GRQ.js";
+=======
+} from "./chunk-2QDPCBAK.js";
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/@angular_core.js
 export {
   ANIMATION_MODULE_TYPE,
   APP_BOOTSTRAP_LISTENER,

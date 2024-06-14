@@ -1,7 +1,12 @@
 import {
   Title
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/@angular_router.js
 } from "./chunk-PEHEFW4X.js";
 import "./chunk-RWIWH72V.js";
+=======
+} from "./chunk-UZF5QNGM.js";
+import "./chunk-2HEBDTGR.js";
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/@angular_router.js
 import {
   DOCUMENT,
   HashLocationStrategy,
@@ -10,7 +15,11 @@ import {
   LocationStrategy,
   PathLocationStrategy,
   ViewportScroller
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/@angular_router.js
 } from "./chunk-46VL4GRD.js";
+=======
+} from "./chunk-MRUW4HX5.js";
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/@angular_router.js
 import {
   APP_BOOTSTRAP_LISTENER,
   APP_INITIALIZER,
@@ -114,7 +123,11 @@ import {
   ɵɵloadQuery,
   ɵɵqueryRefresh,
   ɵɵsanitizeUrlOrResourceUrl
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/@angular_router.js
 } from "./chunk-ORL24GRQ.js";
+=======
+} from "./chunk-2QDPCBAK.js";
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/@angular_router.js
 
 // node_modules/@angular/router/fesm2022/router.mjs
 var PRIMARY_OUTLET = "primary";
@@ -5526,7 +5539,7 @@ function mapToCanDeactivate(providers) {
 function mapToResolve(provider) {
   return (...params) => inject(provider).resolve(...params);
 }
-var VERSION = new Version("17.3.8");
+var VERSION = new Version("17.3.11");
 export {
   ActivatedRoute,
   ActivatedRouteSnapshot,
@@ -5609,7 +5622,7 @@ export {
 
 @angular/router/fesm2022/router.mjs:
   (**
-   * @license Angular v17.3.8
+   * @license Angular v17.3.11
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)

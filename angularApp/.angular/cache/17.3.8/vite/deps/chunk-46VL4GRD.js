@@ -59,7 +59,11 @@ import {
   ɵɵinject,
   ɵɵinjectAttribute,
   ɵɵstyleProp
+<<<<<<<< HEAD:angularApp/.angular/cache/17.3.8/vite/deps/chunk-46VL4GRD.js
 } from "./chunk-ORL24GRQ.js";
+========
+} from "./chunk-2QDPCBAK.js";
+>>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/chunk-MRUW4HX5.js
 
 // node_modules/@angular/common/fesm2022/common.mjs
 var _DOM = null;
@@ -3714,7 +3718,7 @@ function isPlatformWorkerApp(platformId) {
 function isPlatformWorkerUi(platformId) {
   return platformId === PLATFORM_WORKER_UI_ID;
 }
-var VERSION = new Version("17.3.8");
+var VERSION = new Version("17.3.11");
 var _ViewportScroller = class _ViewportScroller {
 };
 _ViewportScroller.ɵprov = ɵɵdefineInjectable({
@@ -5024,9 +5028,13 @@ export {
 
 @angular/common/fesm2022/common.mjs:
   (**
-   * @license Angular v17.3.8
+   * @license Angular v17.3.11
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)
 */
+<<<<<<<< HEAD:angularApp/.angular/cache/17.3.8/vite/deps/chunk-46VL4GRD.js
 //# sourceMappingURL=chunk-46VL4GRD.js.map
+========
+//# sourceMappingURL=chunk-MRUW4HX5.js.map
+>>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/chunk-MRUW4HX5.js

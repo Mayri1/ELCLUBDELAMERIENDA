@@ -1,6 +1,10 @@
 import {
   getDOM
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/@angular_forms.js
 } from "./chunk-46VL4GRD.js";
+=======
+} from "./chunk-MRUW4HX5.js";
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/@angular_forms.js
 import {
   ChangeDetectorRef,
   Directive,
@@ -44,7 +48,11 @@ import {
   ɵɵdirectiveInject,
   ɵɵgetInheritedFactory,
   ɵɵlistener
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/@angular_forms.js
 } from "./chunk-ORL24GRQ.js";
+=======
+} from "./chunk-2QDPCBAK.js";
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/@angular_forms.js
 
 // node_modules/@angular/forms/fesm2022/forms.mjs
 var _BaseControlValueAccessor = class _BaseControlValueAccessor {
@@ -6234,7 +6242,7 @@ var UntypedFormBuilder = _UntypedFormBuilder;
     }]
   }], null, null);
 })();
-var VERSION = new Version("17.3.8");
+var VERSION = new Version("17.3.11");
 var _FormsModule = class _FormsModule {
   /**
    * @description
@@ -6382,7 +6390,7 @@ export {
 
 @angular/forms/fesm2022/forms.mjs:
   (**
-   * @license Angular v17.3.8
+   * @license Angular v17.3.11
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)

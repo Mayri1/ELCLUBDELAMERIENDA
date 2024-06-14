@@ -1,6 +1,10 @@
 import {
   withHttpTransferCache
+<<<<<<<< HEAD:angularApp/.angular/cache/17.3.8/vite/deps/chunk-PEHEFW4X.js
 } from "./chunk-RWIWH72V.js";
+========
+} from "./chunk-2HEBDTGR.js";
+>>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/chunk-UZF5QNGM.js
 import {
   CommonModule,
   DOCUMENT,
@@ -11,7 +15,11 @@ import {
   isPlatformServer,
   parseCookieValue,
   setRootDomAdapter
+<<<<<<<< HEAD:angularApp/.angular/cache/17.3.8/vite/deps/chunk-PEHEFW4X.js
 } from "./chunk-46VL4GRD.js";
+========
+} from "./chunk-MRUW4HX5.js";
+>>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/chunk-UZF5QNGM.js
 import {
   APP_ID,
   ApplicationModule,
@@ -69,7 +77,11 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
+<<<<<<<< HEAD:angularApp/.angular/cache/17.3.8/vite/deps/chunk-PEHEFW4X.js
 } from "./chunk-ORL24GRQ.js";
+========
+} from "./chunk-2QDPCBAK.js";
+>>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/chunk-UZF5QNGM.js
 
 // node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs
 var GenericBrowserDomAdapter = class extends DomAdapter {
@@ -1841,7 +1853,7 @@ function provideClientHydration(...features) {
   }
   return makeEnvironmentProviders([typeof ngDevMode !== "undefined" && ngDevMode ? provideZoneJsCompatibilityDetector() : [], withDomHydration(), featuresKind.has(HydrationFeatureKind.NoHttpTransferCache) || hasHttpTransferCacheOptions ? [] : withHttpTransferCache({}), providers]);
 }
-var VERSION = new Version("17.3.8");
+var VERSION = new Version("17.3.11");
 var makeStateKey2 = makeStateKey;
 var TransferState2 = TransferState;
 
@@ -1887,9 +1899,13 @@ export {
 
 @angular/platform-browser/fesm2022/platform-browser.mjs:
   (**
-   * @license Angular v17.3.8
+   * @license Angular v17.3.11
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)
 */
+<<<<<<<< HEAD:angularApp/.angular/cache/17.3.8/vite/deps/chunk-PEHEFW4X.js
 //# sourceMappingURL=chunk-PEHEFW4X.js.map
+========
+//# sourceMappingURL=chunk-UZF5QNGM.js.map
+>>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/chunk-UZF5QNGM.js

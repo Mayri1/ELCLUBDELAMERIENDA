@@ -35,12 +35,21 @@ import {
   provideProtractorTestingSupport,
   withHttpTransferCacheOptions,
   withNoHttpTransferCache
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/@angular_platform-browser.js
 } from "./chunk-PEHEFW4X.js";
 import "./chunk-RWIWH72V.js";
 import {
   getDOM
 } from "./chunk-46VL4GRD.js";
 import "./chunk-ORL24GRQ.js";
+=======
+} from "./chunk-UZF5QNGM.js";
+import "./chunk-2HEBDTGR.js";
+import {
+  getDOM
+} from "./chunk-MRUW4HX5.js";
+import "./chunk-2QDPCBAK.js";
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/@angular_platform-browser.js
 export {
   BrowserModule,
   By,

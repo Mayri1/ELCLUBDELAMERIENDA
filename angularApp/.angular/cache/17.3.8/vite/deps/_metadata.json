@@ -1,0 +1,103 @@
+{
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/_metadata.json
+  "hash": "4330554e",
+  "configHash": "ba62cad6",
+  "lockfileHash": "b2f7ca2b",
+  "browserHash": "d7138edf",
+=======
+  "hash": "c0c1cbcd",
+  "configHash": "2723bbeb",
+  "lockfileHash": "23e7ebc0",
+  "browserHash": "b330000e",
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/_metadata.json
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/_metadata.json
+      "fileHash": "ab9377f3",
+=======
+      "fileHash": "47cda992",
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/_metadata.json
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/_metadata.json
+      "fileHash": "8549e6b2",
+=======
+      "fileHash": "f323b464",
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/_metadata.json
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/_metadata.json
+      "fileHash": "729f19ae",
+=======
+      "fileHash": "686330c8",
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/_metadata.json
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/_metadata.json
+      "fileHash": "d26f3f8c",
+=======
+      "fileHash": "5dae4543",
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/_metadata.json
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/_metadata.json
+      "fileHash": "9e8d55da",
+=======
+      "fileHash": "1113d10b",
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/_metadata.json
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/_metadata.json
+      "fileHash": "cd9b28e8",
+=======
+      "fileHash": "82c21d49",
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/_metadata.json
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+<<<<<<< HEAD:angularApp/.angular/cache/17.3.7/vite/deps/_metadata.json
+    "chunk-PEHEFW4X": {
+      "file": "chunk-PEHEFW4X.js"
+    },
+    "chunk-RWIWH72V": {
+      "file": "chunk-RWIWH72V.js"
+    },
+    "chunk-46VL4GRD": {
+      "file": "chunk-46VL4GRD.js"
+    },
+    "chunk-ORL24GRQ": {
+      "file": "chunk-ORL24GRQ.js"
+=======
+    "chunk-UZF5QNGM": {
+      "file": "chunk-UZF5QNGM.js"
+    },
+    "chunk-2HEBDTGR": {
+      "file": "chunk-2HEBDTGR.js"
+    },
+    "chunk-MRUW4HX5": {
+      "file": "chunk-MRUW4HX5.js"
+    },
+    "chunk-2QDPCBAK": {
+      "file": "chunk-2QDPCBAK.js"
+>>>>>>> dafd65fc1c17ab20478cfde77fe65e871522bb9b:angularApp/.angular/cache/17.3.8/vite/deps/_metadata.json
+    }
+  }
+}
