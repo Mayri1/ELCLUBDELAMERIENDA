@@ -1,56 +1,44 @@
-import { Component, inject } from '@angular/core';
-import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-register-form',
-  standalone: true,
-  imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './register-form.component.html',
-  styleUrl: './register-form.component.css'
+  styleUrls: ['./register-form.component.css'],
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule, HttpClientModule]  // Importa ReactiveFormsModule aquí
 })
-export class RegisterFormComponent {
+export class RegisterFormComponent implements OnInit {
+  userForm: FormGroup = new FormGroup({
+    firstName: new FormControl('', [Validators.required]),
+    lastName: new FormControl('', [Validators.required]),
+    userName: new FormControl('', [Validators.required]), 
+    email: new FormControl('', [Validators.required]),
+    password: new FormControl('', [Validators.required])
+  });
 
-  private readonly _formBuilder = inject(FormBuilder);
+  constructor(private http: HttpClient) {}
 
-  formGroup = this._formBuilder.nonNullable.group({
-    firstName:["", Validators.required],
-    lastName: ["", Validators.required],
-    userName: ["", Validators.required],
-    email: ["", Validators.required],
-    password: ["", Validators.required],
+  ngOnInit() {}
 
-  })
+  onSubmit() {
+    if (this.userForm.valid) {
+      // Mapea los campos del formulario a los nombres esperados por el backend
+      const formData = {
+        username: this.userForm.value.userName,
+        first_name: this.userForm.value.firstName,
+        last_name: this.userForm.value.lastName,
+        email: this.userForm.value.email,
+        password: this.userForm.value.password
+      };
 
-
-  // formGroup = new FormGroup({
-  //   firstName: new FormControl("", [Validators.required]),
-  //   lastName: new FormControl("", [Validators.required, Validators.minLength(4)]),
-  //   userName: new FormControl("", [Validators.required, Validators.minLength(4), Validators.maxLength(8)]),
-  //   email: new FormControl("", [Validators.required, Validators.email]),
-  //   password: new FormControl("", [Validators.required]),
-  //   isAgree: new FormControl(false)
-  // })
-
-  clickRegister(): void {
-    if(this.formGroup.valid){
-
-    const firstName = this.formGroup.controls.firstName.value;
-    const lastName = this.formGroup.controls.lastName.value;
-    const userName = this.formGroup.controls.userName.value;
-    const email = this.formGroup.controls.email.value;
-    const password = this.formGroup.controls.password.value;
-   
-    const data = {data: {
-      "firstName": firstName,
-      "lastName": lastName,
-      "userName": userName,
-      "email": email,
-      "password": password
+      this.http.post('http://localhost:8000/api/register/', formData)
+        .subscribe({
+          next: (response) => console.log('User registered successfully!', response),
+          error: (error) => console.log('Error occurred while registering user:', error)
+        });
     }
-  };
-
-    console.log(data.data);
-      } 
   }
 }

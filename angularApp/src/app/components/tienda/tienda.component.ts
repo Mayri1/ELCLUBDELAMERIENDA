@@ -1,20 +1,20 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Router } from '@angular/router'; // Asegúrate de importar Router desde '@angular/router'
 
 @Component({
   selector: 'app-tienda',
-  standalone: true,
-  imports: [],
   templateUrl: './tienda.component.html',
   styleUrls: ['./tienda.component.css']
 })
 export class TiendaComponent {
-  constructor(){}
-  @ViewChild('mostrador') mostrador!: ElementRef<HTMLDivElement>; // Type assertion for clarity
-  @ViewChild('seleccion') seleccion!: ElementRef<HTMLDivElement>; // Type assertion
-  @ViewChild('img') imgSeleccionada!: ElementRef<HTMLImageElement>; // Type assertion
-  @ViewChild('modelo') modeloSeleccionado!: ElementRef<HTMLParagraphElement>; // Type assertion
-  @ViewChild('descripcion') descripSeleccionada!: ElementRef<HTMLParagraphElement>; // Type assertion
-  @ViewChild('precio') precioSeleccionado!: ElementRef<HTMLSpanElement>; // Type assertion
+  constructor(private router: Router) {}
+
+  @ViewChild('mostrador') mostrador!: ElementRef<HTMLDivElement>;
+  @ViewChild('seleccion') seleccion!: ElementRef<HTMLDivElement>;
+  @ViewChild('img') imgSeleccionada!: ElementRef<HTMLImageElement>;
+  @ViewChild('modelo') modeloSeleccionado!: ElementRef<HTMLParagraphElement>;
+  @ViewChild('descripcion') descripSeleccionada!: ElementRef<HTMLParagraphElement>;
+  @ViewChild('precio') precioSeleccionado!: ElementRef<HTMLSpanElement>;
 
   cargar(item: any) {
     this.quitarBordes();
@@ -52,6 +52,12 @@ export class TiendaComponent {
   quitarBordes() {
     const items = document.getElementsByClassName('item');
     for (let i = 0; i < items.length; i++) {
-      (items[i] as HTMLElement).style.border = 'none';    }
+      (items[i] as HTMLElement).style.border = 'none';
+    }
+  }
+
+  // Función para navegar a la página de servicios
+  navegarAServicios() {
+    this.router.navigateByUrl('/servicios');
   }
 }

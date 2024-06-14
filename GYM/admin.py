@@ -1,9 +1,7 @@
 from django.contrib import admin
-from .models import Clase, Reserva, Pago, Recurso, Item
+from .models import Item, Producto
 
 # Registra cada uno de tus modelos aquí
-admin.site.register(Clase)
-admin.site.register(Reserva)
-admin.site.register(Pago)
-admin.site.register(Recurso)
 admin.site.register(Item)
+
+admin.site.register(Producto)

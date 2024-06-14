@@ -28,39 +28,34 @@
       <div class="header__content">
         <span class="bg__blur"></span>
         <span class="bg__blur header__blur"></span>
-      </div >
-
-      <div class="register__form">
-        <h2>Formulario de Registro</h2>
-        <form class="form" [formGroup]="formGroup">
+        
+      </div>
+      <div class="header__form">
+        <form class="form" [formGroup]="userForm" (ngSubmit)="onSubmit()">
           <div>
             <label>Primer Nombre:</label>
-            <input type="text" class="" formControlName="firstName">
+            <input type="text" formControlName="firstName">
           </div>
-      
           <div>
             <label>Apellido:</label>
-            <input type="text" class="" formControlName="lastName">
+            <input type="text" formControlName="lastName">
           </div>
-      
           <div>
             <label>Nombre de usuario:</label>
-            <input type="text" class="" formControlName="userName">
+            <input type="text" formControlName="userName">
           </div>
-      
           <div>
             <label>Email:</label>
-            <input type="email" class="" formControlName="email">
+            <input type="text" formControlName="email">
           </div>
-      
           <div>
             <label>Contraseña:</label>
-            <input type="password" class="" formControlName="password">
+            <input type="text" formControlName="password">
           </div>
-      
-          <button id="submit-form" class="btn" type="button" (click)="clickRegister()" [disabled]="!formGroup.valid">Enviar</button>
+          <button class="btn" type="submit" [disabled]="!userForm.valid">Enviar</button>
         </form>
       </div>
+      
     </header>
    
     <footer class="section__container footer__container">
