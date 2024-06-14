@@ -1,9 +1,10 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { NavigationComponent } from '../../shared/navigation/navigation.component';
 
 @Component({
   selector: 'app-tienda',
   standalone: true,
-  imports: [],
+  imports: [NavigationComponent],
   templateUrl: './tienda.component.html',
   styleUrls: ['./tienda.component.css']
 })
