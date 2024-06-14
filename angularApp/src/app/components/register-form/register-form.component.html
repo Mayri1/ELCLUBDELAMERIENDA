@@ -31,36 +31,31 @@
         
       </div>
       <div class="header__form">
-        <form class="form "[formGroup]="userForm">
+        <form class="form" [formGroup]="userForm" (ngSubmit)="onSubmit()">
           <div>
             <label>Primer Nombre:</label>
-            <input type="text" class="" formControlName="firstName">
+            <input type="text" formControlName="firstName">
           </div>
-
           <div>
             <label>Apellido:</label>
-            <input type="text" class="" formControlName="lastName">
+            <input type="text" formControlName="lastName">
           </div>
-
           <div>
             <label>Nombre de usuario:</label>
-            <input type="text" class="" formControlName="userName">
+            <input type="text" formControlName="userName">
           </div>
-
           <div>
             <label>Email:</label>
-            <input type="text" class="" formControlName="email">
+            <input type="text" formControlName="email">
           </div>
-
           <div>
             <label>Contraseña:</label>
-            <input type="text" class="" formControlName="password">
+            <input type="text" formControlName="password">
           </div>
-
-          <button class="btn" type="submit" disabled><a href="/" routerLinkActive="router-link-active" >Enviar</a></button>
-
+          <button class="btn" type="submit" [disabled]="!userForm.valid">Enviar</button>
         </form>
       </div>
+      
     </header>
    
     <footer class="section__container footer__container">
