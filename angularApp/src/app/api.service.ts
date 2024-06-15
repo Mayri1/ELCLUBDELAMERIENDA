@@ -8,9 +8,7 @@ import { Router } from 'express';
   providedIn: 'root'
 })
 export class ApiService {
-  getItems() {
-    throw new Error('Method not implemented.');
-  }
+ 
   // URL base del API
   baseUrl: string = 'http://127.0.0.1:8000/api/';
 

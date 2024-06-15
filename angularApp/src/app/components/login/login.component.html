@@ -15,13 +15,12 @@
         <a href="#"><img src="assets/logo.png" alt="logo" /></a>
       </div>
       <ul class="nav__links">
-        <li class="link"><a href="#">Home</a></li>
-        <li class="link"><a href="#">Programa</a></li>
-        <li class="link"><a href="#">Servicios</a></li>
-        <li class="link"><a href="/faq">Sobre nosotros</a></li>
-        <li class="link"><a href="#">Galería</a></li>
-        <li class="link"><a href="#">Iniciar Sesión</a></li>
-
+        <li class="link"><a routerLink="">Home</a></li>
+        <li class="link"><a routerLink="">Programa</a></li>
+        <li class="link"><a routerLink="">Servicios</a></li>
+        <li class="link"><a routerLink="/faq">Sobre nosotros</a></li>
+        <li class="link"><a routerLink="">Galería</a></li>
+        <li class="link"><a routerLink="/tienda">Tienda</a></li>     
       </ul>
     </nav>
     <!-- <app-navigation></app-navigation> -->
@@ -34,19 +33,9 @@
       </div>
       <div class="register__form">
         <form class="form" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+         
           <div>
-            <label>Primer Nombre:</label>
-            <input type="text" formControlName="firstName">
-          </div>
-          <div>
-            <label>Apellido:</label>
-            <input type="text" formControlName="lastName">
-          </div>
-          <div>
-            <label>Nombre de usuario:</label>
-            <input type="text" formControlName="userName">
-          </div>
-          <div>
+
             <label>Email:</label>
             <input type="text" formControlName="email">
           </div>
@@ -55,10 +44,11 @@
             <input type="text" formControlName="password">
           </div>
           <button class="btn" type="submit" [disabled]="!userForm.valid">Enviar</button>
+
+          <label>¿Aun no tienes cuenta? </label><a routerLink="/register" style="color:aliceblue">Registrarse</a>
         </form>
       </div>
       
     </header>
-   
-    </body>
+     </body>
 </html>
