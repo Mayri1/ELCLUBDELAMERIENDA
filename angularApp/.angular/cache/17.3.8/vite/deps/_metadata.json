@@ -1,64 +1,37 @@
 {
-<<<<<<< HEAD
   "hash": "d4f40e62",
   "configHash": "47e85df3",
   "lockfileHash": "e859f256",
   "browserHash": "7a61080c",
-=======
-  "hash": "8ec8e5ff",
-  "configHash": "a9533f51",
-  "lockfileHash": "e859f256",
-  "browserHash": "359593b4",
->>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-<<<<<<< HEAD
-      "fileHash": "242da7b6",
-=======
-      "fileHash": "25dc0c8b",
->>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
+      "fileHash": "ffa600f5",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-<<<<<<< HEAD
-      "fileHash": "a7da670b",
-=======
-      "fileHash": "c2ebc9c5",
->>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
+      "fileHash": "bc0337b4",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-<<<<<<< HEAD
-      "fileHash": "94bd3fac",
-=======
-      "fileHash": "9b96b862",
->>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
+      "fileHash": "e0438a24",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-<<<<<<< HEAD
-      "fileHash": "1a75ab02",
-=======
-      "fileHash": "2abcc0bf",
->>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
+      "fileHash": "19a87d60",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-<<<<<<< HEAD
-      "fileHash": "ae089ce5",
-=======
-      "fileHash": "7781f9f5",
->>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
+      "fileHash": "98249315",
       "needsInterop": false
     }
   },
