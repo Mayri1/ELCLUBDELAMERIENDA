@@ -28,34 +28,25 @@
       <div class="header__content">
         <span class="bg__blur"></span>
         <span class="bg__blur header__blur"></span>
-        
-      </div>
-      <div class="header__form">
-        <form class="form" [formGroup]="userForm" (ngSubmit)="onSubmit()">
-          <div>
-            <label>Primer Nombre:</label>
-            <input type="text" formControlName="firstName">
-          </div>
-          <div>
-            <label>Apellido:</label>
-            <input type="text" formControlName="lastName">
-          </div>
-          <div>
-            <label>Nombre de usuario:</label>
-            <input type="text" formControlName="userName">
-          </div>
+      </div >
+
+      <div class="register__form">
+        <h2>¡Hola de nuevo!</h2>
+        <form class="form" [formGroup]="formGroup">
+                     
           <div>
             <label>Email:</label>
-            <input type="text" formControlName="email">
+            <input type="email" class="" formControlName="email">
           </div>
+      
           <div>
             <label>Contraseña:</label>
-            <input type="text" formControlName="password">
+            <input type="password" class="" formControlName="password">
           </div>
-          <button class="btn" type="submit" [disabled]="!userForm.valid">Enviar</button>
+      
+          <button id="submit-form" class="btn" type="button" (click)="clickLogin()" [disabled]="!formGroup.valid">Enviar</button>
         </form>
       </div>
-      
     </header>
    
     <footer class="section__container footer__container">
