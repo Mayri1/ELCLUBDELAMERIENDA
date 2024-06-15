@@ -1,14 +1,22 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+<<<<<<< HEAD
 import { NavigationComponent } from '../../shared/navigation/navigation.component';
 
 @Component({
   selector: 'app-tienda',
   standalone: true,
   imports: [NavigationComponent],
+=======
+import { Router } from '@angular/router'; // Asegúrate de importar Router desde '@angular/router'
+
+@Component({
+  selector: 'app-tienda',
+>>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
   templateUrl: './tienda.component.html',
   styleUrls: ['./tienda.component.css']
 })
 export class TiendaComponent {
+<<<<<<< HEAD
   constructor(){}
   @ViewChild('mostrador') mostrador!: ElementRef<HTMLDivElement>; // Type assertion for clarity
   @ViewChild('seleccion') seleccion!: ElementRef<HTMLDivElement>; // Type assertion
@@ -16,6 +24,16 @@ export class TiendaComponent {
   @ViewChild('modelo') modeloSeleccionado!: ElementRef<HTMLParagraphElement>; // Type assertion
   @ViewChild('descripcion') descripSeleccionada!: ElementRef<HTMLParagraphElement>; // Type assertion
   @ViewChild('precio') precioSeleccionado!: ElementRef<HTMLSpanElement>; // Type assertion
+=======
+  constructor(private router: Router) {}
+
+  @ViewChild('mostrador') mostrador!: ElementRef<HTMLDivElement>;
+  @ViewChild('seleccion') seleccion!: ElementRef<HTMLDivElement>;
+  @ViewChild('img') imgSeleccionada!: ElementRef<HTMLImageElement>;
+  @ViewChild('modelo') modeloSeleccionado!: ElementRef<HTMLParagraphElement>;
+  @ViewChild('descripcion') descripSeleccionada!: ElementRef<HTMLParagraphElement>;
+  @ViewChild('precio') precioSeleccionado!: ElementRef<HTMLSpanElement>;
+>>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
 
   cargar(item: any) {
     this.quitarBordes();
@@ -53,6 +71,16 @@ export class TiendaComponent {
   quitarBordes() {
     const items = document.getElementsByClassName('item');
     for (let i = 0; i < items.length; i++) {
+<<<<<<< HEAD
       (items[i] as HTMLElement).style.border = 'none';    }
+=======
+      (items[i] as HTMLElement).style.border = 'none';
+    }
+  }
+
+  // Función para navegar a la página de servicios
+  navegarAServicios() {
+    this.router.navigateByUrl('/servicios');
+>>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
   }
 }

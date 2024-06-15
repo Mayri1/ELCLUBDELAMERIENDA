@@ -4,6 +4,10 @@ from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
+from rest_framework import generics
+from rest_framework.parsers import MultiPartParser, FormParser
+from .models import Producto
+from .serializers import ProductoSerializer
 
 from .serializers import UserSerializer
 
@@ -27,3 +31,13 @@ class LoginView(APIView):
             token, created = Token.objects.get_or_create(user=user)
             return Response({'token': token.key})
         return Response({'error': 'Invalid Credentials'}, status=status.HTTP_400_BAD_REQUEST)
+    
+class ProductoListCreateAPIView(generics.ListCreateAPIView):
+    queryset = Producto.objects.all()
+    serializer_class = ProductoSerializer
+    parser_classes = [MultiPartParser, FormParser]
+
+class ProductoRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Producto.objects.all()
+    serializer_class = ProductoSerializer
+    parser_classes = [MultiPartParser, FormParser]

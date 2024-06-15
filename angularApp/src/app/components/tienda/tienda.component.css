@@ -19,6 +19,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans';
 }
+<<<<<<< HEAD
 
 body {
     font-family: "Poppins", sans-serif;
@@ -30,6 +31,8 @@ body {
     color: var(--white);
 }
 
+=======
+>>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
 .contenido{
     max-width: 1200px;
     width: 100%;
@@ -49,13 +52,21 @@ body {
 
 .mostrador .fila .item{
     max-width: 210px;
+<<<<<<< HEAD
     padding: 10px;
+=======
+    padding: 30px;
+>>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
     height: 250px;
     text-align: center;
     margin: 0 10px;
     cursor: pointer;
     border-radius: 5px;
+<<<<<<< HEAD
     transition: .5s ease;
+=======
+    transition: .3s;
+>>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
 }
 .mostrador .fila .item:hover{
     background-color: #e6e6e6;
@@ -63,7 +74,11 @@ body {
 .mostrador .fila .item img {
     width: 100%;
     height: 200px; 
+<<<<<<< HEAD
     object-fit:contain;
+=======
+    object-fit: cover;
+>>>>>>> 2b64acf2217ed0b0a9e71a39b407ac3cb541cb91
 }
 .mostrador .fila .item .descripcion{
     color: #b10e0e;
