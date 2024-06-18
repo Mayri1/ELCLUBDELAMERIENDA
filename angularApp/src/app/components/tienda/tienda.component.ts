@@ -1,5 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NavigationComponent } from '../../shared/navigation/navigation.component';
+// import { Router as router} from '@angular/router';
 
 @Component({
   selector: 'app-tienda',
@@ -53,6 +54,12 @@ export class TiendaComponent {
   quitarBordes() {
     const items = document.getElementsByClassName('item');
     for (let i = 0; i < items.length; i++) {
-      (items[i] as HTMLElement).style.border = 'none';    }
+      (items[i] as HTMLElement).style.border = 'none';
+    }
   }
-}
+
+  // // Función para navegar a la página de servicios
+  // navegarAServicios() {
+  //   this.router.navigateByUrl('/servicios');
+  }
+

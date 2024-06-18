@@ -83,3 +83,84 @@
     color: var(--white);
   }
   
+
+  
+@media (width < 900px) {
+  .nav__links {
+    display: none;
+  }
+
+  .header__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .header__imagen {
+    grid-area: 1/1/2/2;
+  }
+
+  .explore__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .class__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .class__image {
+    min-height: 500px;
+  }
+
+  .precio__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .review__container {
+    gap: 2rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 200px;
+  }
+}
+
+@media (width < 600px) {
+  .explore__header {
+    flex-direction: column;
+  }
+
+  .explore__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .unirse__container {
+    margin-bottom: 15rem;
+  }
+
+  .unirse__grid {
+    width: 100%;
+    margin: 0;
+    bottom: -20rem;
+  }
+
+  .precio__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .review__container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .review__footer {
+    flex-direction: column;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 150px;
+  }
+
+  .footer__bar {
+    text-align: center;
+  }
+}

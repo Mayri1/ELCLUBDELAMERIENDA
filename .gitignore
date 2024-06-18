@@ -18,6 +18,7 @@ out-tsc/
 tmp/
 myenv
 
+
 # Ignorar carpetas de compilación
 /dist
 /tmp
@@ -26,6 +27,7 @@ myenv
 
 # Ignorar virtual environment
 /myenv
+miEntorno/
 
 # Ignorar módulos de Node.js
 /node_modules
